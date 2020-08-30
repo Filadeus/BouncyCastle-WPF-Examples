@@ -5,13 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BouncyCastle_WPF_Examples"
         mc:Ignorable="d"
-        Title="MainWindow" Height="325" Width="323" Opacity="0.75">
+        Title="MainWindow" Height="332" Width="474" Background="White">
     <Window.Effect>
         <BlurEffect Radius="0"/>
     </Window.Effect>
     <Grid>
-        <Grid HorizontalAlignment="Center" Height="294" VerticalAlignment="Center" Width="315" Background="White">
-            <Button Content="Button" Margin="116,213,124,58" Width="75" Click="Button_Click"/>
+        <Grid HorizontalAlignment="Center" Height="294" VerticalAlignment="Center" Width="466" Background="White" Margin="0,4,0,3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="0*"/>
+            </Grid.ColumnDefinitions>
+            <Button Content="Button" Margin="173,234,172,37" Click="Button_Click" Background="White"/>
+            <TextBox HorizontalAlignment="Left" Name="textResult"  Height="153" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="446" IsReadOnly="True"/>
         </Grid>
 
     </Grid>
