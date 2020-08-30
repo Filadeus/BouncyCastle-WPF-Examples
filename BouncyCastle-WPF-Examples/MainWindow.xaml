@@ -1,0 +1,18 @@
+﻿<Window x:Class="BouncyCastle_WPF_Examples.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BouncyCastle_WPF_Examples"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="325" Width="323" Opacity="0.75">
+    <Window.Effect>
+        <BlurEffect Radius="0"/>
+    </Window.Effect>
+    <Grid>
+        <Grid HorizontalAlignment="Center" Height="294" VerticalAlignment="Center" Width="315" Background="White">
+            <Button Content="Button" Margin="116,213,124,58" Width="75" Click="Button_Click"/>
+        </Grid>
+
+    </Grid>
+</Window>
